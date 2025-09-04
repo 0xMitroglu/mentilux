@@ -5,7 +5,6 @@
 /* Tokens card redesign */
 .tokenCard {
   background: #0f0c08;
-  border: 1px solid #221e19;
   border-radius: 1rem;
   padding: 2rem;
   display: grid;
@@ -170,7 +169,6 @@
 
 .bgCard {
   background: #0f0c08;
-  border: 1px solid #221e19;
   border-radius: 0.75rem;
   padding: 1.5rem;
 }
