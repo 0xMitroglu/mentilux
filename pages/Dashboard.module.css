@@ -1,0 +1,176 @@
+.fadeIn {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.text3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #FF6F00;
+}
+
+.gridCols1MdCols3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .gridCols1MdCols3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridCols1LgCols2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .gridCols1LgCols2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.bgCard {
+  background-color: #1E1E1E;
+  border: 1px solid #2D2D2D;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.flexSpaceX2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.textPrimary {
+  color: #FF6F00;
+}
+
+.textLg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.flexJustifyBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.textSm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #A0A0A0;
+}
+
+.text2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.relativeW24 {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+}
+
+.w24 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.transitionAll {
+  transition: all 1s ease-in-out;
+}
+
+.absoluteCenter {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textXs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.spaceY2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.mb4 {
+  margin-bottom: 1rem;
+}
+
+.wFull {
+  width: 100%;
+  background-color: #2D2D2D;
+  border-radius: 0.375rem;
+  height: 0.75rem;
+  overflow: hidden;
+}
+
+.bgMuted {
+  height: 100%;
+  background: linear-gradient(to right, #4A90E2, #E94E77, #50E3C2, #F5A623);
+}
+
+.spaceY2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.p3 {
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+}
+
+.flexSpaceX3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bgPrimary {
+  background-color: #FF6F00;
+  color: #FFFFFF;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.fontMedium {
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.textCenter {
+  text-align: center;
+  padding: 2rem 0;
+  color: #A0A0A0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

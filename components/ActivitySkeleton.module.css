@@ -1,0 +1,32 @@
+.spaceY4 > * + * {
+  margin-top: 1rem;
+}
+
+.flexSpaceX3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: #1E1E1E;
+  border: 1px solid #2D2D2D;
+  border-radius: 0.5rem;
+}
+
+.flex1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #2D2D2D 25%, #3D3D3D 50%, #2D2D2D 75%);
+  background-size: 200% 100%;
+  animation: pulse 1.5s infinite;
+  border-radius: 0.25rem;
+}
+
+@keyframes pulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

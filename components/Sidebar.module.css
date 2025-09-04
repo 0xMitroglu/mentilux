@@ -1,0 +1,178 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: var(--sidebar-width);
+  background-color: #0a0a0a;
+  /* border-right: 1px solid #333; */
+  display: flex;
+  flex-direction: column;
+  transition: width 0.25s ease;
+}
+
+.sidebarCollapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.logo {
+  padding: 1.65rem;
+}
+
+.logoCollapsed {
+  padding: 1.1rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoContainerCollapsed {
+  justify-content: center;
+}
+
+.logoTextHidden {
+  display: none;
+}
+
+.logoImg {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: block;
+}
+
+.logoImgHidden {
+  display: none;
+}
+
+.logoText {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #b3b3b2;
+}
+
+.logoIconText {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.logoIconTextHidden {
+  display: none;
+}
+
+.toggleBtn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #a0a0a0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.toggleBtnCollapsed {
+  margin-left: 0;
+}
+
+.nav {
+  flex: 1;
+  padding: 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.275rem;
+}
+
+.navCollapsed {
+  padding: 0.55rem 0.55rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 0.55rem 0.825rem;
+  font-size: 0.9625rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.navIconOnly {
+  justify-content: center;
+}
+
+.navLinkActive {
+  background-color: rgba(255, 111, 0, 0.1);
+  color: #ff6f00;
+}
+
+.navLinkInactive {
+  color: #a0a0a0;
+}
+
+.navLinkInactive:hover {
+  color: #ffffff;
+  background-color: rgba(156, 163, 175, 0.5);
+}
+
+.navIcon {
+  margin-right: 0.825rem;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.navIconCollapsed {
+  margin-right: 0;
+}
+
+.navTextHidden {
+  display: none;
+}
+
+.footer {
+  padding: 1.1rem;
+}
+
+.footerCollapsed {
+  padding: 0.55rem;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.55rem 0.825rem;
+  font-size: 0.9625rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  color: #a0a0a0;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  color: #ffffff;
+  background-color: rgba(156, 163, 175, 0.5);
+}
+
+.logoutIcon {
+  margin-right: 0.825rem;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.logoutIconCollapsed {
+  margin-right: 0;
+}

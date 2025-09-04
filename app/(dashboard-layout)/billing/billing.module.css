@@ -1,0 +1,58 @@
+.fade-in {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-muted-foreground {
+  color: #A0A0A0;
+}
+
+.bg-card {
+  background-color: #1E1E1E;
+}
+
+.border {
+  border: 1px solid #2D2D2D;
+}
+
+.border-border {
+  border-color: #2D2D2D;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
