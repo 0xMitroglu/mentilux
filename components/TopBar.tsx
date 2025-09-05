@@ -12,7 +12,7 @@ export default function TopBar() {
   return (
     <div className={styles.topBar}>
       {/* Left side */}
-      <h1>Dahsboard</h1>
+      <h1>Dashboard</h1>
 
       {/* Right side */}
 

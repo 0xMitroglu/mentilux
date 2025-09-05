@@ -109,7 +109,7 @@ export default function Dashboard() {
           <div className={styles.rowCards}>
             <div className={styles.col + " " + styles.colMdThird + " " + styles.tokenMin}>
               <div className={styles.tokenCard}>
-                <div>
+                <div className={styles.tokenLeft}>
                   <div className={styles.tokenHeader}>
                     <div className={styles.tokenIcon}>
                       <Image src="/icons/token-icon.png" alt="Tokens" width={30} height={30} />
@@ -148,35 +148,48 @@ export default function Dashboard() {
                         cy="60"
                         r="44"
                         stroke="#15120e"
-                        strokeWidth="12"
+                        strokeWidth="10"
                         fill="none"
                       />
+                      {/* last 31 days */}
                       <circle
                         cx="60"
                         cy="60"
                         r="44"
-                        stroke="#1f1a15"
-                        strokeWidth="12"
+                        stroke="#6b2c07"
+                        strokeWidth="10"
                         fill="none"
-                        strokeDasharray={`90 276`}
+                        strokeDasharray={`70 276`}
                         transform="rotate(-90 60 60)"
                       />
+                      {/* last 7 days */}
+                      <circle
+                        cx="60"
+                        cy="60"
+                        r="44"
+                        stroke="#a9470a"
+                        strokeWidth="10"
+                        fill="none"
+                        strokeDasharray={`50 276`}
+                        transform="rotate(-20 60 60)"
+                      />
+                      {/* today */}
                       <circle
                         cx="60"
                         cy="60"
                         r="44"
                         stroke="#d25106"
-                        strokeWidth="12"
+                        strokeWidth="10"
                         fill="none"
-                        strokeDasharray={`${(usagePercentage / 100) * 276} 276`}
-                        transform="rotate(-90 60 60)"
+                        strokeDasharray={`30 276`}
+                        transform="rotate(20 60 60)"
                       />
                     </svg>
                   </div>
 
                   <div className={styles.legend}>
                     <div className={styles.legendItem}>
-                      <span className={styles.legendBullet} />
+                      <span className={`${styles.legendBullet} ${styles.legendBulletToday}`} />
                       <span className={styles.legendLabel}>Today</span>
                       <span className={styles.legendValue}>
                         {tokenUsage?.today.toLocaleString()}
@@ -184,7 +197,7 @@ export default function Dashboard() {
                       <span className={styles.legendBadge}>$</span>
                     </div>
                     <div className={styles.legendItem}>
-                      <span className={styles.legendBullet} />
+                      <span className={`${styles.legendBullet} ${styles.legendBullet7}`} />
                       <span className={styles.legendLabel}>Last 7 days</span>
                       <span className={styles.legendValue}>
                         {tokenUsage?.last7Days.toLocaleString()}
@@ -192,7 +205,7 @@ export default function Dashboard() {
                       <span className={styles.legendBadge}>$</span>
                     </div>
                     <div className={styles.legendItem}>
-                      <span className={styles.legendBullet} />
+                      <span className={`${styles.legendBullet} ${styles.legendBullet31}`} />
                       <span className={styles.legendLabel}>Last 31 days</span>
                       <span className={styles.legendValue}>
                         {tokenUsage?.last31Days.toLocaleString()}

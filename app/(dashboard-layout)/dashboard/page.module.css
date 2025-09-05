@@ -12,6 +12,12 @@
   gap: 2rem;
 }
 
+.tokenLeft {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .tokenHeader {
   display: flex;
   align-items: center;
@@ -68,8 +74,8 @@
 }
 
 .donutSvg {
-  width: 14rem;
-  height: 14rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 .legend {
@@ -89,7 +95,15 @@
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 9999px;
-  background: #5a3a23;
+}
+.legendBulletToday {
+  background: #d25106;
+}
+.legendBullet7 {
+  background: #a9470a;
+}
+.legendBullet31 {
+  background: #6b2c07;
 }
 .legendLabel {
   color: #b3b3b2;
@@ -110,25 +124,25 @@
 }
 
 .actions {
-  margin-top: 2rem;
+  margin-top: auto;
   display: flex;
   gap: 1rem;
 }
 
 .btnGhost {
   background: transparent;
-  color: #eaeaea;
-  border: 1px solid #3a3128;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.75rem;
+  color: #ffffff;
+  border: 2px solid var(--primary-hex);
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.9rem;
 }
 
 .btnPrimaryGrad {
   background: linear-gradient(135deg, #8e3c06 0%, var(--primary-hex) 60%, #a94f12 100%);
   color: #ffffff;
-  border: 1px solid #3a3128;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.75rem;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.9rem;
 }
 
 /* existing layout helpers retained */
